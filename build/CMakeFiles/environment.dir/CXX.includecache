@@ -6,15 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/environment.cpp
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/custom/cluster/kdtree.h
+../../render/render.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/render/render.h
+
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/environment.cpp
 sensors/lidar.h
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/sensors/lidar.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/sensors/lidar.h
 render/render.h
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/render/render.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/render/render.h
 processPointClouds.h
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/processPointClouds.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/processPointClouds.h
 processPointClouds.cpp
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/processPointClouds.cpp
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/processPointClouds.cpp
 iostream
 -
 chrono
@@ -22,11 +26,13 @@ chrono
 thread
 -
 
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/processPointClouds.cpp
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/processPointClouds.cpp
 processPointClouds.h
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/processPointClouds.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/processPointClouds.h
+unordered_set
+-
 
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/processPointClouds.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/processPointClouds.h
 pcl/io/pcd_io.h
 -
 pcl/common/common.h
@@ -56,21 +62,21 @@ ctime
 chrono
 -
 render/box.h
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/render/box.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/render/box.h
+custom/cluster/kdtree.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/custom/cluster/kdtree.h
+unordered_set
+-
 
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/render/box.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/render/box.h
 Eigen/Geometry
 -
 
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/render/render.cpp
-render.h
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/render/render.h
-
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/render/render.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/render/render.h
 pcl/visualization/pcl_visualizer.h
 -
 box.h
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/render/box.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/render/box.h
 iostream
 -
 vector
@@ -78,9 +84,9 @@ vector
 string
 -
 
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/sensors/lidar.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/sensors/lidar.h
 ../render/render.h
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/render/render.h
+/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor_Fusion/01-Lidar/01-Intro/Lidar_Project/src/render/render.h
 ctime
 -
 chrono
