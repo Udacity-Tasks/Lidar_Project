@@ -1,3 +1,0 @@
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/quiz/ransac/build/CMakeFiles/rebuild_cache.dir
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/quiz/ransac/build/CMakeFiles/edit_cache.dir
-/media/mcitir_linux/Storage/Projects/COURSES/Udacity/Sensor Fusion/01-Lidar/01-Intro/SFND_Lidar_Obstacle_Detection/src/quiz/ransac/build/CMakeFiles/quizRansac.dir

@@ -18,6 +18,9 @@
 #include <ctime>
 #include <chrono>
 #include "render/box.h"
+#include "custom/cluster/kdtree.h"
+#include <unordered_set>
+
 
 template<typename PointT>
 class ProcessPointClouds {
@@ -30,13 +33,19 @@ public:
 
     void numPoints(typename pcl::PointCloud<PointT>::Ptr cloud);
 
-    typename pcl::PointCloud<PointT>::Ptr FilterCloud(typename pcl::PointCloud<PointT>::Ptr cloud, float filterRes, Eigen::Vector4f minPoint, Eigen::Vector4f maxPoint);
+    typename pcl::PointCloud<PointT>::Ptr FilterCloud(const typename pcl::PointCloud<PointT>::Ptr &cloud, float filterRes, Eigen::Vector4f minPoint, Eigen::Vector4f maxPoint);
 
     std::pair<typename pcl::PointCloud<PointT>::Ptr, typename pcl::PointCloud<PointT>::Ptr> SeparateClouds(pcl::PointIndices::Ptr inliers, typename pcl::PointCloud<PointT>::Ptr cloud);
 
-    std::pair<typename pcl::PointCloud<PointT>::Ptr, typename pcl::PointCloud<PointT>::Ptr> SegmentPlane(typename pcl::PointCloud<PointT>::Ptr cloud, int maxIterations, float distanceThreshold);
+    std::pair<typename pcl::PointCloud<PointT>::Ptr, typename pcl::PointCloud<PointT>::Ptr> CustomSegmentPlane(const typename pcl::PointCloud<PointT>::Ptr &cloud, int maxIterations, float distanceThreshold);
 
-    std::vector<typename pcl::PointCloud<PointT>::Ptr> Clustering(typename pcl::PointCloud<PointT>::Ptr cloud, float clusterTolerance, int minSize, int maxSize);
+    std::unordered_set<int> CustomRansac(const typename pcl::PointCloud<PointT>::Ptr &cloud, int maxIterations, float distanceTol);
+
+    std::vector<typename pcl::PointCloud<PointT>::Ptr> CustomClustering(const typename pcl::PointCloud<PointT>::Ptr &cloud, float clusterTolerance, int minSize, int maxSize);
+
+    std::vector<std::vector<int>> CustomEuclideanCluster(const std::vector<std::vector<float>> &points, KdTree *&tree, float distanceTol, float minSize, float maxSize);
+    
+    void CustomEuclideanClusterHelper(const std::vector<std::vector<float>> &points, KdTree *tree, float distanceTol, int index, std::vector<int> &cluster, std::vector<bool> &processed);
 
     Box BoundingBox(typename pcl::PointCloud<PointT>::Ptr cluster);
 
